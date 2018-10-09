@@ -21,7 +21,7 @@
 		297824A71BC2D69A0041C395 /* adn_2.cer in Resources */ = {isa = PBXBuildFile; fileRef = 297824A21BC2D69A0041C395 /* adn_2.cer */; };
 		297824A81BC2D69A0041C395 /* adn_2.cer in Resources */ = {isa = PBXBuildFile; fileRef = 297824A21BC2D69A0041C395 /* adn_2.cer */; };
 		297824AA1BC2DAD80041C395 /* AFAutoPurgingImageCacheTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 298D7C801BC2C88F00FD3B3E /* AFAutoPurgingImageCacheTests.m */; };
-		297824AB1BC2DB060041C395 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299522391BBF104D00859F49 /* AFNetworking.framework */; };
+		297824AB1BC2DB060041C395 /* AFNetworking-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299522391BBF104D00859F49 /* AFNetworking-iOS.framework */; };
 		297824AC1BC2DB450041C395 /* AFImageDownloaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 298D7C841BC2C88F00FD3B3E /* AFImageDownloaderTests.m */; };
 		297824AD1BC2DBA40041C395 /* AFNetworkActivityManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 298D7C861BC2C88F00FD3B3E /* AFNetworkActivityManagerTests.m */; };
 		297824AE1BC2DBD80041C395 /* AFUIActivityIndicatorViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 298D7C8C1BC2C88F00FD3B3E /* AFUIActivityIndicatorViewTests.m */; };
@@ -270,7 +270,7 @@
 		298D7C8F1BC2C88F00FD3B3E /* AFURLSessionManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManagerTests.m; sourceTree = "<group>"; };
 		298D7CDF1BC2CB5A00FD3B3E /* ADNNetServerTrustChain */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ADNNetServerTrustChain; sourceTree = "<group>"; };
 		298D7CE21BC2CB7C00FD3B3E /* HTTPBinOrgServerTrustChain */ = {isa = PBXFileReference; lastKnownFileType = folder; path = HTTPBinOrgServerTrustChain; sourceTree = "<group>"; };
-		299522391BBF104D00859F49 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		299522391BBF104D00859F49 /* AFNetworking-iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "AFNetworking-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2995223C1BBF104D00859F49 /* AFNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = ../Framework/AFNetworking.h; sourceTree = "<group>"; };
 		2995223E1BBF104D00859F49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Framework/Info.plist; sourceTree = "<group>"; };
 		299522461BBF125A00859F49 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
@@ -348,7 +348,7 @@
 				88D1B6091E59D8EF002A6EE4 /* QuartzCore.framework in Frameworks */,
 				88D1B6071E59D8D4002A6EE4 /* Security.framework in Frameworks */,
 				88D1B6061E59D8C9002A6EE4 /* UIKit.framework in Frameworks */,
-				297824AB1BC2DB060041C395 /* AFNetworking.framework in Frameworks */,
+				297824AB1BC2DB060041C395 /* AFNetworking-iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,7 +505,7 @@
 		2995223A1BBF104D00859F49 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				299522391BBF104D00859F49 /* AFNetworking.framework */,
+				299522391BBF104D00859F49 /* AFNetworking-iOS.framework */,
 				299522651BBF129200859F49 /* AFNetworking.framework */,
 				299522771BBF136400859F49 /* AFNetworking.framework */,
 				298D7C3B1BC2C79500FD3B3E /* AFNetworking iOS Tests.xctest */,
@@ -764,7 +764,7 @@
 			);
 			name = "AFNetworking iOS";
 			productName = AFNetworking;
-			productReference = 299522391BBF104D00859F49 /* AFNetworking.framework */;
+			productReference = 299522391BBF104D00859F49 /* AFNetworking-iOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		299522641BBF129200859F49 /* AFNetworking watchOS */ = {
@@ -1430,7 +1430,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alamofire.AFNetworking;
-				PRODUCT_NAME = AFNetworking;
+				PRODUCT_NAME = "AFNetworking-iOS";
 				SKIP_INSTALL = YES;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
@@ -1452,7 +1452,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alamofire.AFNetworking;
-				PRODUCT_NAME = AFNetworking;
+				PRODUCT_NAME = "AFNetworking-iOS";
 				SKIP_INSTALL = YES;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
